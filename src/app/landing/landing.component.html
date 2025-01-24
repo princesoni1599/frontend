@@ -1,0 +1,20 @@
+<div>
+    <label for="role">Filter by Role:</label>
+    <select id="role" (change)="onRoleChange($event)">
+      <option value="">All</option>
+      <option value="admin">Admin</option>
+      <option value="user">User</option>
+      <option value="moderator">moderator</option>
+    </select>
+  </div>
+  
+<div class="user-grid">
+    <div *ngFor="let user of data" class="user-card">
+      <img [src]="user.image" alt="{{ user.firstName }}'s Image" class="user-image">
+      <h3>{{ user.firstName }} {{ user.lastName }}</h3>
+      <p>Email: {{ user.email }}</p>
+      <p>Age: {{ user.age }}</p>
+      <p>Gender: {{ user.gender }}</p>
+      <button (click)="goToProfile(user.id)">View Profile</button>
+    </div>
+  </div>

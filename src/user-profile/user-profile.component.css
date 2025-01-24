@@ -1,0 +1,110 @@
+/* Centering the profile container */
+.profile-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #fff;
+}
+
+/* Profile Title */
+.profile-title {
+  text-align: center;
+  font-size: 2em;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile-image-container {
+  text-align: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #4CAF50;
+}
+
+/* Profile Details */
+.profile-details {
+  text-align: left;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4CAF50; /* Add a line under the profile details */
+}
+
+.profile-details p {
+  margin: 5px 0;
+}
+
+.profile-details strong {
+  color: #4CAF50;
+}
+
+/* Address Section */
+.address-section {
+  border-top: 2px solid #4CAF50; /* Line above the address section */
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Add margin below for separation */
+}
+
+.address-section h3 {
+  font-size: 1.5em;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.address-section p {
+  margin: 5px 0;
+}
+
+/* Bank Details */
+.profile-bank {
+  margin-top: 20px;
+  margin-bottom: 20px; /* Add margin below for separation from next section */
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #4CAF50; /* Line above the bank details */
+  padding-top: 20px;
+}
+
+.profile-bank h3 {
+  margin-bottom: 10px;
+}
+
+.profile-bank p {
+  margin: 5px 0;
+  text-align: left;
+}
+
+/* Company Details */
+.profile-company {
+  margin-top: 20px;
+  margin-bottom: 20px; /* Add margin below for separation from next section */
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #4CAF50; /* Line above the company details */
+  padding-top: 20px;
+}
+
+.profile-company h3 {
+  margin-bottom: 10px;
+}
+
+.profile-company p {
+  margin: 5px 0;
+  text-align: left;
+}
+
+/* Style for loading container */
+.loading-container {
+  text-align: center;
+  font-size: 1.5em;
+  color: #888;
+}
