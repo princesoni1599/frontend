@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
-import { Component, OnInit, SimpleChanges } from '@angular/core';
-import { ActivatedRoute, RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../user.service';
 
 import { UsersService } from '../app/users.service';
