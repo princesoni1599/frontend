@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-filter',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule, CommonModule, RouterModule],
+  imports: [HttpClientModule, CommonModule, RouterModule],
   templateUrl: './filter.component.html',
   styleUrl: './filter.component.css'
 })

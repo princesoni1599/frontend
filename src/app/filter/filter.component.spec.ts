@@ -1,23 +1,36 @@
-// import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-// import { FilterComponent } from './filter.component';
+import { FilterComponent } from './filter.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { ActivatedRoute } from '@angular/router';
 
-// describe('FilterComponent', () => {
-//   let component: FilterComponent;
-//   let fixture: ComponentFixture<FilterComponent>;
+describe('FilterComponent', () => {
+  let component: FilterComponent;
+  let fixture: ComponentFixture<FilterComponent>;
 
-//   beforeEach(async () => {
-//     await TestBed.configureTestingModule({
-//       imports: [FilterComponent]
-//     })
-//     .compileComponents();
+  const activatedRouteMock = {
+    snapshot: {
+      paramMap: {
+        get: (key: string) => 'mockValue'  // Return mock data when the get method is called
+      }
+    }
+  };
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [FilterComponent,HttpClientTestingModule],
+      providers: [
+              { provide: ActivatedRoute, useValue: activatedRouteMock }  // Provide the mock
+            ]
+    })
+    .compileComponents();
     
-//     fixture = TestBed.createComponent(FilterComponent);
-//     component = fixture.componentInstance;
-//     fixture.detectChanges();
-//   });
+    fixture = TestBed.createComponent(FilterComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
-//   it('should create', () => {
-//     expect(component).toBeTruthy();
-//   });
-// });
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

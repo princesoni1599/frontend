@@ -8,7 +8,7 @@ import { Users } from './users';
 })
 export class UsersService {
 
-  private apiUrl = 'http://h2bnaya.hzdyeuf4d8gcdhcs.eastus.azurecontainer.io:8081/v1'; // Spring Boot API URL
+  private apiUrl = 'http://localhost:8081/v1'; // Spring Boot API URL
   
     constructor(private http: HttpClient) {}
   

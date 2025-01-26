@@ -16,6 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrl: './user-profile.component.css'
 })
 export class UserProfileComponent implements OnInit {
+  someValueFromRoute(someValueFromRoute: any) {
+      throw new Error('Method not implemented.');
+  }
   flag: boolean = true;
   user: Users | undefined; 
   constructor(
